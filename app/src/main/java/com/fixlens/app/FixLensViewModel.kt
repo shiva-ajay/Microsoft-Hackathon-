@@ -920,7 +920,7 @@ class FixLensViewModel(app: Application) : AndroidViewModel(app) {
                 )
             }
         }
-        if (raws.isEmpty() && target != null) _state.update { it.copy(hint = "Point the camera at the $target") }
+        if (raws.isEmpty() && target != null) _state.update { it.copy(hint = pointHint(target)) }
     }
 
     private fun summary(g: Grounding?) = when (g) {
@@ -1088,6 +1088,10 @@ class FixLensViewModel(app: Application) : AndroidViewModel(app) {
         _state.update { it.copy(guide = null) }
     }
 
+    /** "Point the camera at the engine oil dipstick handle": the target's name, without its description after a comma. */
+    private fun pointHint(target: String): String =
+        "Point the camera at the " + target.substringBefore(',').trim().removePrefix("the ").removePrefix("The ")
+
     /** Points at a guide step's target phrase: a rolled-back side request, streamed into the tracker. */
     private suspend fun pointAtStep(target: String) {
         val session = _state.value.session ?: return
@@ -1110,7 +1114,7 @@ class FixLensViewModel(app: Application) : AndroidViewModel(app) {
         }.onFailure { Log.e(TAG, "Step pointing failed", it) }.getOrNull()
         parser.finish()
         Log.i(TAG, "Step pointing \"$target\": ${summary(parser.grounding)} in ${System.currentTimeMillis() - start} ms (${result?.stats})")
-        if (tracked == 0 && turn.get() == id) _state.update { it.copy(hint = "Point the camera at the $target") }
+        if (tracked == 0 && turn.get() == id) _state.update { it.copy(hint = pointHint(target)) }
     }
 
     /**

@@ -1,5 +1,5 @@
 {
-  "kb_version": "2026-09-27.generic2",
+  "kb_version": "2026-09-27.generic4",
   "entries": [
     {
       "id": "air_conditioner_not_cooling",
@@ -1238,27 +1238,17 @@
         "oil light stays on",
         "smoke"
       ],
-      "safety": [
-        "Park on level ground and switch the engine off.",
-        "Wait about five minutes for the oil to settle. Some engine parts may still be hot."
-      ],
+      "safety": [],
       "steps": [
         {
           "n": 1,
-          "say": "Open the bonnet and prop it up with its support rod.",
-          "target": null,
-          "verify": null,
-          "caution": "The rod can be hot after driving. Hold it by its grip."
-        },
-        {
-          "n": 2,
           "say": "Find the dipstick. Its handle is a bright ring or loop, usually yellow or orange.",
           "target": "the engine oil dipstick handle, a brightly coloured ring or loop, usually yellow or orange",
           "verify": null,
-          "caution": null
+          "caution": "Engine off, and wait about five minutes for the oil to settle. Parts may still be hot."
         },
         {
-          "n": 3,
+          "n": 2,
           "say": "Pull the dipstick all the way out and wipe it clean with a cloth.",
           "target": "the engine oil dipstick handle, a brightly coloured ring or loop, usually yellow or orange",
           "verify": null,
@@ -1268,7 +1258,7 @@
           }
         },
         {
-          "n": 4,
+          "n": 3,
           "say": "Push it back in fully, then pull it out again.",
           "target": "the engine oil dipstick handle, a brightly coloured ring or loop, usually yellow or orange",
           "verify": null,
@@ -1278,7 +1268,7 @@
           }
         },
         {
-          "n": 5,
+          "n": 4,
           "say": "The oil should be between the two marks near the tip.",
           "target": "the end of the oil dipstick with its two level marks",
           "verify": null,
@@ -1288,7 +1278,7 @@
           }
         },
         {
-          "n": 6,
+          "n": 5,
           "say": "If it's near or below the lower mark, unscrew the oil filler cap on top of the engine.",
           "target": "the round engine oil filler cap on top of the engine, marked with an oil can symbol or the words engine oil",
           "verify": "the engine oil filler cap is off and the round filler opening is visible",
@@ -1299,7 +1289,7 @@
           }
         },
         {
-          "n": 7,
+          "n": 6,
           "say": "Slowly pour in a little of the oil your manual recommends.",
           "target": "the open round engine oil filler hole on top of the engine",
           "verify": null,
@@ -1309,7 +1299,7 @@
           }
         },
         {
-          "n": 8,
+          "n": 7,
           "say": "Screw the filler cap back on tightly, wait a few minutes, then check the dipstick again.",
           "target": "the round engine oil filler cap on top of the engine",
           "verify": null,
@@ -1320,7 +1310,7 @@
           }
         },
         {
-          "n": 9,
+          "n": 8,
           "say": "When the oil is between the marks, push the dipstick back in fully.",
           "target": "the engine oil dipstick handle, a brightly coloured ring or loop, usually yellow or orange",
           "verify": null,
@@ -1335,11 +1325,7 @@
         "say": "Time for your weekly engine oil check. It only takes a couple of minutes."
       },
       "source": "Maruti Swift OM 99011M75T08-74W p.9-8 + Honda City 2022 OM pp.263, 268-270 + Hyundai Creta 2019 OM p.9-29, 9-30 + Tata Nexon BS-VI OM p.176-177; checked 2026-09-27",
-      "safety_anim": [
-        {
-          "kind": "engine_off"
-        }
-      ]
+      "safety_anim": []
     },
     {
       "id": "car_check_coolant",

@@ -96,8 +96,8 @@ private const val CUE_AFTER_IMPACT_MS = 900f
 
 private val CARD_WIDTH = 112.dp
 private val GLYPH_SIZE = 72.dp
-/** Below the top bar and the hint chip. */
-private val CARD_TOP = 112.dp
+/** Below the top bar and a one- or two-line hint chip. */
+private val CARD_TOP = 136.dp
 private val CARD_SIDE = 12.dp
 
 private enum class Glyph { Turn, Pull, Push, Level, Pour, Unplug, SwitchOff, EngineOff, Technician }

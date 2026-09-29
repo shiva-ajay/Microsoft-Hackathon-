@@ -1,45 +1,16 @@
-# FixLens: Round 2 pitch — opener + tough questions
+# FixLens: Round 2 pitch — tough questions and Q&A prep
 
-This is a follow-on to [PRESENTATION_SCRIPT.md](PRESENTATION_SCRIPT.md), built from the jury's
-Round 1 feedback: open stronger in the first 15 seconds, and have simple, confident answers ready
-for "how often would you use this?" and "what about Gemini?".
+The full Round 2 pitch, including the opening hook, now lives in
+[ROUND2_SCRIPT.md](ROUND2_SCRIPT.md) — built around the "self-diagnosis for your things" idea
+(a mild fever, you self-treat; something serious, you see a doctor). This file is the Q&A backup:
+simple, confident answers for the tough questions from Round 1, plus a few more that follow from
+the same theme.
 
 Everything below is written in plain, spoken words on purpose. Practice it out loud, not silently.
 
 ---
 
-## 1. The first 15 seconds (the hook)
-
-Say this before you show any slide, or right as slide 1 appears. Then move into the Round 1 script.
-
-**Say (recommended, ~15 sec):**
-> Your washing machine flashes "E4" at midnight. No manual, no technician, no internet.
-> You point your phone at it, ask out loud — and FixLens shows you the exact part to touch,
-> right there, in seconds. That's FixLens: point, ask, fix.
-
-**Tip:** Say it a little slower than feels natural. Pause after "no internet." and after "in
-seconds." Those two pauses are what make it land. Practice with a timer — it should take
-14 to 17 seconds, not less.
-
-### Two alternates, if you want to try a different angle
-
-**Alternate A — leads with the car (more visual, good if judges saw the demo photos):**
-> A car that won't start. A washing machine blinking a code nobody understands. Right now,
-> your only options are: call someone, wait, and pay. FixLens lets you point your phone,
-> ask out loud, and it shows you exactly what to touch — no internet, no manual, in seconds.
-
-**Alternate B — leads with a question, forces engagement:**
-> Quick question: how many things in your house or car have you ignored because you didn't
-> know where to even start? FixLens fixes that. Point your phone at it, ask out loud, and
-> it shows you the exact part to touch — completely offline.
-
-**Tip:** Pick one and stick to it. Don't say all three. If you're not sure which lands better,
-say Alternate A to a friend and the recommended one to another friend, and see which one makes
-them say "oh, that's useful" first.
-
----
-
-## 2. "How often would you actually use this in real life?"
+## 1. "How often would you actually use this in real life?"
 
 This question means: *is this a toy, or does it actually matter day to day?* Don't get
 defensive. Answer with a comparison first, then widen it.
@@ -67,7 +38,7 @@ defensive. Answer with a comparison first, then widen it.
 
 ---
 
-## 3. "What if Gemini brings an offline model like this — what's the difference then?"
+## 2. "What if Gemini brings an offline model like this — what's the difference then?"
 
 This is the big one. Don't panic and don't put Gemini down — sound confident, not scared.
 The core idea: **the AI model is just the engine. FixLens is the whole car.**
@@ -96,7 +67,7 @@ The core idea: **the AI model is just the engine. FixLens is the whole car.**
 
 ---
 
-## 3B. More tough questions about daily use
+## 2B. More tough questions about daily use
 
 **Rule for all of these: only say what is true today.** If you have not tried something on the
 phone, say "it can" or "I'm building it", never "it does". Judges forgive "not yet". They do not
@@ -145,7 +116,7 @@ The Round 1 deck says "about 2 to 3 seconds" as a target. Your real measured num
 
 ---
 
-## 4. How to handle a tough question you didn't expect
+## 3. How to handle a tough question you didn't expect
 
 Simple 3-step habit, works for almost anything they throw at you:
 
@@ -161,13 +132,10 @@ plainly, no over-explaining. Judges trust an honest "not yet" far more than a st
 
 ---
 
-## 5. Before Round 2
+## 4. Before Round 2
 
-- [ ] Say the 15-second opener out loud, with a timer, at least five times before you go in.
-- [ ] Say both soundbites (section 2 and 3) out loud until they don't sound memorized.
-- [ ] Reuse the Round 1 deck and script for the rest — only the opener and these two answers
-      are new. Don't rebuild what already worked.
-- [ ] If your build has moved forward since Round 1 (model check done, box on screen, etc.),
-      update the "Where are you in the build?" answer in
-      [PRESENTATION_SCRIPT.md](PRESENTATION_SCRIPT.md#likely-questions-and-simple-answers)
-      before you go in — that answer ages fast.
+- [ ] Rehearse [ROUND2_SCRIPT.md](ROUND2_SCRIPT.md) first — that's the actual pitch, opener
+      included. This file is just the backup for questions.
+- [ ] Say the two soundbites (section 1 and 2 above) out loud until they don't sound memorized.
+- [ ] Check today's real status for voice and the IR remote before claiming either works live —
+      see the note at the top of ROUND2_SCRIPT.md.

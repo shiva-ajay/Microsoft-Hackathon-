@@ -61,6 +61,14 @@ class GuideTest {
         assertNull(tech.anim)
     }
 
+    @Test fun `with no safety lines the guide starts at step 1, introduced by the meaning`() {
+        val quick = oil.copy(safety = emptyList(), steps = listOf(KbStep(1, "Find the dipstick.", caution = "Engine off first.")))
+        val s = Guide.start(quick)
+        assertEquals(GuideState.Step(quick, 0), s)
+        assertEquals("Let's check the oil. Find the dipstick.", Guide.instruction(s)!!.say)
+        assertEquals("Engine off first.", Guide.instruction(s)!!.caution)
+    }
+
     @Test fun `next, back, repeat and done at the end`() {
         var s: GuideState = GuideState.Step(oil, 0)
         s = Guide.onCommand(s, Command.Next).first

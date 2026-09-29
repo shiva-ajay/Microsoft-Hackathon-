@@ -130,7 +130,9 @@ object Guide {
             )
         }
         is GuideState.Step -> state.entry.steps[state.index].let { s ->
-            Instruction(s.say, s.target, s.verify, "Step ${state.index + 1} of ${state.entry.steps.size}", s.caution, s.anim)
+            // With no safety lines to open the guide, the entry's meaning introduces its first step.
+            val intro = if (state.index == 0 && state.entry.safety.isEmpty()) state.entry.meaning.trim().takeIf { it.isNotEmpty() } else null
+            Instruction(listOfNotNull(intro, s.say).joinToString(" "), s.target, s.verify, "Step ${state.index + 1} of ${state.entry.steps.size}", s.caution, s.anim)
         }
         // A routine check (the KB's `remind`) says when it comes round again; the app schedules that reminder.
         is GuideState.Done -> Instruction(

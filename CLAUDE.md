@@ -226,7 +226,8 @@ post-hackathon plan, not now.
 - Safety lines and `steps[].say` are **displayed and spoken verbatim** from the JSON.
 - The VLM may only rephrase or answer follow-ups using the current entry.
 - `call_technician` or a matched `escalate_if` → `Escalate` state; no repair steps.
-- Validate at startup: every entry has an id, severity, ≥1 safety line (unless call_technician)
+- Validate at startup: every entry has an id, severity, ≥1 safety line (unless call_technician, or its first step
+  carries the warning as a `caution`, as the car oil check does so it starts straight at the dipstick)
   and ordered steps. Fail loudly in debug builds.
 - Log `entry_id` + `kb_version` with every answer.
 

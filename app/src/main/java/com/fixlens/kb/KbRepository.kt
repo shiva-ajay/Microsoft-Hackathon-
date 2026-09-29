@@ -31,7 +31,8 @@ object KbRepository {
             when (e.severity) {
                 Severity.CallTechnician -> if (e.steps.isNotEmpty()) out += "$at: call_technician entries give no repair steps"
                 else -> {
-                    if (e.safety.isEmpty()) out += "$at: needs at least one safety line"
+                    // The warning can instead sit on the first step as a caution (shown, not a "done" to confirm).
+                    if (e.safety.isEmpty() && e.steps.firstOrNull()?.caution.isNullOrBlank()) out += "$at: needs at least one safety line, or a caution on step 1"
                     if (e.steps.isEmpty()) out += "$at: no steps"
                 }
             }
